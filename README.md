@@ -1,4 +1,4 @@
-# AppleSupport AI agent
+# AppleSupport AI agent (Lokesh Kumar A R)
 
 Prototype for the Hiver SDE Intern take-home: classify an AppleSupport tweet, retrieve similar historical resolutions, draft a public reply, and decide whether a person should handle it.
 
