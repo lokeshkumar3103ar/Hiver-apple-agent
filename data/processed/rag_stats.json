@@ -1,0 +1,8 @@
+{
+  "total_indexed": 15000,
+  "source": "data/processed/labeled_subset.csv",
+  "embed_model": "all-MiniLM-L6-v2",
+  "embed_dims": 384,
+  "collection": "apple_support_rag",
+  "similarity_metric": "cosine"
+}

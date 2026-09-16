@@ -1,0 +1,210 @@
+{
+  "metadata": {
+    "generated_at": "2026-09-16T21:37:40.580225+00:00",
+    "sample_size": 10,
+    "systems": [
+      "trivial",
+      "tfidf",
+      "full_agent"
+    ],
+    "judge_enabled": true,
+    "generation_model": "gemini-3.8-flash",
+    "judge_model": "gemini-3.8-flash",
+    "all_labels_human_verified": true,
+    "leakage_controls": "All golden IDs excluded from TF-IDF training; current row excluded from RAG retrieval."
+  },
+  "systems": {
+    "trivial": {
+      "n": 10,
+      "errors": 0,
+      "intent_accuracy": 10.0,
+      "intent_accuracy_ci95": [
+        1.8,
+        40.4
+      ],
+      "intent_macro_f1": 0.017,
+      "per_intent": {
+        "apple_music_issue": {
+          "n": 1,
+          "accuracy": 0.0
+        },
+        "account_and_store_issues": {
+          "n": 1,
+          "accuracy": 0.0
+        },
+        "macos_update_issues": {
+          "n": 1,
+          "accuracy": 0.0
+        },
+        "customer_service_complaint": {
+          "n": 1,
+          "accuracy": 0.0
+        },
+        "missing_photos": {
+          "n": 1,
+          "accuracy": 0.0
+        },
+        "ios_update_issues": {
+          "n": 1,
+          "accuracy": 0.0
+        },
+        "battery_drain_after_update": {
+          "n": 1,
+          "accuracy": 0.0
+        },
+        "software_update_issues": {
+          "n": 1,
+          "accuracy": 0.0
+        },
+        "keyboard_autocorrect_bug": {
+          "n": 1,
+          "accuracy": 0.0
+        },
+        "recurring_device_issues": {
+          "n": 1,
+          "accuracy": 100.0
+        }
+      },
+      "escalation_accuracy": 60.0,
+      "escalation_accuracy_ci95": [
+        31.3,
+        83.2
+      ],
+      "escalation_precision": 0.0,
+      "escalation_recall": 0.0,
+      "escalation_f1": 0.0,
+      "judge_scored_n": 10,
+      "judge_errors": 0,
+      "avg_judge_score": 3.1,
+      "reply_within_280_chars": 100.0
+    },
+    "tfidf": {
+      "n": 10,
+      "errors": 0,
+      "intent_accuracy": 40.0,
+      "intent_accuracy_ci95": [
+        16.8,
+        68.7
+      ],
+      "intent_macro_f1": 0.303,
+      "per_intent": {
+        "apple_music_issue": {
+          "n": 1,
+          "accuracy": 0.0
+        },
+        "account_and_store_issues": {
+          "n": 1,
+          "accuracy": 100.0
+        },
+        "macos_update_issues": {
+          "n": 1,
+          "accuracy": 0.0
+        },
+        "customer_service_complaint": {
+          "n": 1,
+          "accuracy": 0.0
+        },
+        "missing_photos": {
+          "n": 1,
+          "accuracy": 0.0
+        },
+        "ios_update_issues": {
+          "n": 1,
+          "accuracy": 0.0
+        },
+        "battery_drain_after_update": {
+          "n": 1,
+          "accuracy": 100.0
+        },
+        "software_update_issues": {
+          "n": 1,
+          "accuracy": 0.0
+        },
+        "keyboard_autocorrect_bug": {
+          "n": 1,
+          "accuracy": 100.0
+        },
+        "recurring_device_issues": {
+          "n": 1,
+          "accuracy": 100.0
+        }
+      },
+      "escalation_accuracy": 60.0,
+      "escalation_accuracy_ci95": [
+        31.3,
+        83.2
+      ],
+      "escalation_precision": 0.0,
+      "escalation_recall": 0.0,
+      "escalation_f1": 0.0,
+      "judge_scored_n": 10,
+      "judge_errors": 0,
+      "avg_judge_score": 2.5,
+      "reply_within_280_chars": 100.0
+    },
+    "full_agent": {
+      "n": 10,
+      "errors": 0,
+      "intent_accuracy": 90.0,
+      "intent_accuracy_ci95": [
+        59.6,
+        98.2
+      ],
+      "intent_macro_f1": 0.788,
+      "per_intent": {
+        "apple_music_issue": {
+          "n": 1,
+          "accuracy": 100.0
+        },
+        "account_and_store_issues": {
+          "n": 1,
+          "accuracy": 100.0
+        },
+        "macos_update_issues": {
+          "n": 1,
+          "accuracy": 0.0
+        },
+        "customer_service_complaint": {
+          "n": 1,
+          "accuracy": 100.0
+        },
+        "missing_photos": {
+          "n": 1,
+          "accuracy": 100.0
+        },
+        "ios_update_issues": {
+          "n": 1,
+          "accuracy": 100.0
+        },
+        "battery_drain_after_update": {
+          "n": 1,
+          "accuracy": 100.0
+        },
+        "software_update_issues": {
+          "n": 1,
+          "accuracy": 100.0
+        },
+        "keyboard_autocorrect_bug": {
+          "n": 1,
+          "accuracy": 100.0
+        },
+        "recurring_device_issues": {
+          "n": 1,
+          "accuracy": 100.0
+        }
+      },
+      "escalation_accuracy": 70.0,
+      "escalation_accuracy_ci95": [
+        39.7,
+        89.2
+      ],
+      "escalation_precision": 0.667,
+      "escalation_recall": 0.5,
+      "escalation_f1": 0.571,
+      "judge_scored_n": 10,
+      "judge_errors": 0,
+      "avg_judge_score": 4.5,
+      "reply_within_280_chars": 100.0
+    }
+  }
+}

@@ -1,0 +1,39 @@
+# Secrets
+.env
+
+# Python cache and build output
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Large raw data (download from Kaggle)
+data/raw/twcs.csv
+
+# Large generated artifacts
+data/processed/apple_conversations.csv
+data/processed/embeddings_all.npy
+data/processed/embeddings_sample.npy
+data/processed/embeddings_*.npy.meta.json
+data/chroma_db/
+
+# Diagnostic sample runs are ignored except the submitted pilot evidence.
+data/processed/evaluation_results.sample-*.json
+data/processed/evaluation_summary.sample-*.json
+!data/processed/evaluation_results.sample-10.json
+!data/processed/evaluation_summary.sample-10.json
+
+# Streamlit runtime state; config.toml is intentionally versioned.
+.streamlit/secrets.toml
+.streamlit/cache/
+
+# Notebook, OS, and IDE state
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

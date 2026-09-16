@@ -1,0 +1,6 @@
+[server]
+# Avoid the torch.classes file-watcher warning on some installations.
+fileWatcherType = "none"
+
+[browser]
+gatherUsageStats = false
